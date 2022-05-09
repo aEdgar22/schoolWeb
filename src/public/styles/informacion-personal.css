@@ -1,0 +1,11 @@
+/* Importacion de propiedades personalizadas */
+@import url(root.css);
+/* Importacion de encabezado y navegacion por defecto */
+@import url(navegacion-default.css);
+/* Importacion de estilos de formulario para registro y actualizacion de datos*/
+@import url(formularios.css);
+
+body {
+  margin: 0;
+  height: auto;
+}

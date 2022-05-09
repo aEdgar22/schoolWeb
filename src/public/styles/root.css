@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #0353a4;
+  --hover-color: #0a3c7c;
+  --text-color: #fff;
+  --alternative-text-color: #6c757d;
+  --block-color: rgba(233, 236, 239, 50%);
+  --filter-color: rgba(124, 156, 191, 20%);
+  --font: "Inter";
+  --menu-font-weight: 600;
+  --card-font-weight: 200;
+  --button-font-weight: 600;
+  --button-font-size: 1rem;
+  --submenu-font-size: 0.875rem;
+  --header-height: 3.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font);
+  font-size: 16px;
+}
+
+/* Propiedades personalizadas
+reseto de box-sizing
+tipografia y tamaño de fuente establecidos por defecto */

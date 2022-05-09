@@ -1,0 +1,22 @@
+/* Importacion de propiedades personalizadas */
+@import url(root.css);
+/* Importacion de estilos de encabezado y navegacion por defecto */
+@import url(navegacion-default.css);
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+/* Tarjeta de bienvenida */
+#card {
+  height: 3rem;
+  width: 18rem;
+  border: thin solid #f3f3f3;
+  border-radius: 4px;
+  margin: 3.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--alternative-text-color);
+}

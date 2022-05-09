@@ -1,0 +1,92 @@
+/* Estilos para encabezado y navegacion por defecto */
+.header {
+  height: 3.5rem;
+  background-color: var(--primary-color);
+  display: flex;
+}
+
+.nav {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.logo {
+  font-weight: var(--menu-font-weight);
+  color: var(--text-color);
+}
+
+.btn-menu {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0.25rem;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.btn-menu:active {
+  background-color: var(--hover-color);
+}
+
+#img-menu {
+  height: 100%;
+  width: 100%;
+}
+
+/* Submenus desplegados */
+.submenu-container {
+  display: flex;
+  justify-content: space-around;
+  width: 28rem;
+}
+
+.submenu {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+#drop-content {
+  display: none;
+  position: absolute;
+  width: auto;
+  background-color: var(--primary-color);
+  z-index: 999;
+  border-radius: 4px;
+  padding-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+#drop-content a {
+  font-size: 14px;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.875rem;
+}
+
+#drop-content a:hover {
+  background-color: var(--hover-color);
+  border-radius: 4px;
+}
+
+.drop-btn:hover #drop-content {
+  display: block;
+}
+
+@media (min-width: 720px) {
+  .btn-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 719px) {
+  .submenu,
+  .submenu-container {
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+/* Estilos para formularios de registro y actualizacion de datos*/
+#inputs-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 1.5rem auto 2rem;
+  border: 2px solid var(--block-color);
+  border-radius: 4px;
+}
+
+.inputs-childs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+#label-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+label {
+  font-size: 0.875rem;
+  color: var(--alternative-text-color);
+}
+
+input,
+select {
+  height: 2rem;
+  width: 80vw;
+  padding: 0 0.5rem 0 0.5rem;
+  background-color: var(--block-color);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: var(--alternative-text-color);
+  font-family: inherit;
+  transition-duration: 200ms;
+}
+
+#btn-accept {
+  height: 2rem;
+  width: 6rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  transition-duration: 200ms;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+#btn-accept:active {
+  background-color: var(--hover-color);
+}
+
+#correo-validate:invalid {
+  border: thin solid #d00000;
+}
+
+@media (min-width: 760px) {
+  input,
+  select {
+    width: 36rem;
+  }
+}

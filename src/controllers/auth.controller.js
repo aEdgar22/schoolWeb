@@ -65,7 +65,7 @@ const singIn = async (req, res) => {
           })
 
           if(user.rol_id === 1){
-            res.render('admin')
+            return res.render('admin')
           }else if(user.rol_id === 2){
             res.render('estudiante')
           }

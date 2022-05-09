@@ -7,6 +7,8 @@ import checkAdminRole from '../middlewares/auth.handler.js'
 // http://localhost:3000/api/v1/user/
 router.get('/', userController.inicio);
 
+// http://localhost:3000/api/v1/user/singUp
+
 // http://localhost:3000/api/v1/user/singUp - registrar usuario
 router.post(
   '/singUp',
@@ -14,6 +16,10 @@ router.post(
   checkAdminRole,
   auth.singUp
 );
+
+
+//http://localhost:3000/api/v1/user/singUp
+router.get('/singIn')
 
 // http://localhost:3000/api/v1/user/singIn - Ingreso de usuario
 router.post('/singIn', auth.singIn);

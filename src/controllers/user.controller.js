@@ -1,5 +1,5 @@
 const inicio = async (req, res) => {
-    res.render('login')
+    res.render('estudiante')
   };
 
 export default {

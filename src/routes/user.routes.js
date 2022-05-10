@@ -3,13 +3,9 @@ const router = Router();
 import userController from '../controllers/user.controller.js';
 import auth from '../controllers/auth.controller.js';
 import passport from 'passport';
-import checkAdminRole from '../middlewares/auth.handler.js'
-// http://localhost:3000/api/v1/user/
-router.get('/', userController.inicio);
-
-// http://localhost:3000/api/v1/user/singUp
-
-// http://localhost:3000/api/v1/user/singUp - registrar usuario
+import checkAdminRole from '../middlewares/auth.handler.js';
+//- registrar usuario
+// http://localhost:3000/api/v1/user/singUp 
 router.post(
   '/singUp',
   passport.authenticate('jwt', { session: false }),
@@ -17,11 +13,25 @@ router.post(
   auth.singUp
 );
 
+//---------------------------------------------
+//- Ingreso de usuario
+//http://localhost:3000/api/v1/user/singIn
+router.get('/singIn', userController.login)
 
-//http://localhost:3000/api/v1/user/singUp
-router.get('/singIn')
+// http://localhost:3000/api/v1/user/singIn 
+router.post('/singIn',auth.singIn);
 
-// http://localhost:3000/api/v1/user/singIn - Ingreso de usuario
-router.post('/singIn', auth.singIn);
+//----------------------------------------------
+//- inicio Usuario Admin
+// http://localhost:3000/api/v1/user/admin
+router.get('/admin',userController.admin);
+
+//- inicio Usuario Estudiante
+// http://localhost:3000/api/v1/user/estudiante
+router.get('/estudiante', userController.estudiante);
+
+//- inicio Usuario profesor
+// http://localhost:3000/api/v1/user/profesor
+router.get('/profesor', );
 
 export default router;

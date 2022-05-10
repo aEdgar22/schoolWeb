@@ -1,7 +1,7 @@
 import User from '../models/user.model.js';
 import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
-import config from '../database/config.js';
+//import jwt from 'jsonwebtoken';
+//import config from '../database/config.js';
 
 const singUp = async (req, res) => {
   //encriptando la contraseña
@@ -47,8 +47,8 @@ const singIn = async (req, res) => {
       const isMatch = await bcrypt.compareSync(contraseña, user.contraseña);
       if (isMatch) {
         //generar token
-        try {
-          const payload = {
+        //try {
+          /*const payload = {
             sub: user.dni,
             rol: user.rol_id,
           };
@@ -59,17 +59,20 @@ const singIn = async (req, res) => {
           delete user.dataValues.genero;
           delete user.dataValues.telefono;
 
+         
           res.status(200).json({
               user,
               token
-          })
-
+          })*/
           if(user.rol_id === 1){
-            return res.render('admin')
-          }else if(user.rol_id === 2){
-            res.render('estudiante')
+            res.redirect('../user/admin')
+          }else if (user.rol_id === 2){
+            res.redirect('../user/estudiante')
           }
-        } catch (error) {}
+         
+          
+         
+        //} catch (error) {}
       } else {
         res.status(401).json({ message: 'contraseña incorrecta' });
       }

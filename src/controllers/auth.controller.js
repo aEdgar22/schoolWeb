@@ -27,7 +27,7 @@ const singUp = async (req, res) => {
    
     }
   } catch (error) {
-    res.status(500).json(error);
+    res.status(500).json(`ha ocurrido un error ${error}`);
   }
 };
 
@@ -64,10 +64,12 @@ const singIn = async (req, res) => {
               user,
               token
           })*/
-          if(user.rol_id === 1){
+          if(user.rol_id === 3){
             res.redirect('../user/admin')
-          }else if (user.rol_id === 2){
+          }else if (user.rol_id === 1){
             res.redirect('../user/estudiante')
+          }else if(user.rol_id === 2){
+            res.redirect('../user/profesor')
           }
          
           

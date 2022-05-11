@@ -39,6 +39,9 @@ app.set("view engine", ".hbs");
 
 //routes
 routerApi(app);
+app.get('/', (req, res) => {
+    res.render('landing')
+})
 
 
 

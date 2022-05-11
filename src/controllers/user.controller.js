@@ -11,7 +11,7 @@ const admin = async(req, res) => {
 }
 
 const estudiante = async(req, res) =>{
-  await res.render('estudiante')
+  await res.render('students/home.hbs')
 }
   
 export default {

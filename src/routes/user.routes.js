@@ -8,7 +8,7 @@ import checkAdminRole from '../middlewares/auth.handler.js';
 // http://localhost:3000/api/v1/user/singUp 
 router.post(
   '/singUp',
-  passport.authenticate('jwt', { session: false }),
+  //passport.authenticate('jwt', { session: false }),
   checkAdminRole,
   auth.singUp
 );

@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="../admin styles/registrar-estudiante.css" />
+<link rel="stylesheet" href="/admin-styles/registrar-estudiante.css" />
 <!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
 <header class="header">
   <nav class="nav">
     <p class="logo">Gestión Académica</p>
     <button class="btn-menu">
-      <img id="img-menu" src="../assets/menu.svg" />
+      <img id="img-menu" src="/assets/menu.svg" />
     </button>
     <div class="submenu-container">
       <!-- Menu desplegable -->
@@ -39,7 +39,7 @@
   <span id="label-title">Registrar estudiante</span>
   <div class="inputs-childs">
     <label for="">Nombres</label>
-    <input type="text" name="nombres" />
+    <input type="text" name="nombre" />
   </div>
   <div class="inputs-childs">
     <label for="">Primer apellido</label>
@@ -51,7 +51,7 @@
   </div>
   <div class="inputs-childs">
     <label for="">Tipo de identificación</label>
-    <select name="tipo-identificacion">
+    <select name="tipo_doc_id">
       <option disabled selected>Seleccione</option>
       <option value="cc">C.C</option>
       <option value="ti">T.I</option>
@@ -59,7 +59,15 @@
   </div>
   <div class="inputs-childs">
     <label for="">Número de identificación</label>
-    <input type="text" name="numero-identificacion" />
+    <input type="text" name="dni" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Sede</label>
+    <input type="text" name="sede" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Curso</label>
+    <input type="text" name="curso_id" />
   </div>
   <div class="inputs-childs">
     <label for="">Jornada</label>
@@ -67,7 +75,7 @@
   </div>
   <div class="inputs-childs">
     <label for="">Correo electrónico</label>
-    <input id="correo-validate" type="email" name="correo" />
+    <input id="correo-validate" type="email" name="email" />
   </div>
   <div class="inputs-childs">
     <label for="">Contraseña</label>

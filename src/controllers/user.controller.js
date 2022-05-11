@@ -7,7 +7,7 @@ const login = async (req,res) =>{
 } 
 
 const admin = async(req, res) => {
-  await res.render('admin')
+  await res.render('admin/home-admin.hbs')
 }
 
 const estudiante = async(req, res) =>{

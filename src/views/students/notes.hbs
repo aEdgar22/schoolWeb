@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="../styles/notas-estudiante.css" />
+<!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
+<header class="header">
+  <nav class="nav">
+    <p class="logo">Gestión Académica</p>
+    <button class="btn-menu">
+      <img id="img-menu" src="../assets/menu.svg" />
+    </button>
+    <div class="submenu-container">
+      <!-- Menu desplegable -->
+      <div class="drop-btn">
+        <span class="submenu">Institucional</span>
+        <div id="drop-content">
+          <a href="#">Información académica</a>
+          <a href="#">Observador</a>
+        </div>
+      </div>
+      <span class="submenu">Resultado de notas</span>
+      <div class="drop-btn">
+        <span class="submenu">Usuario</span>
+        <div id="drop-content">
+          <a href="#">Perfil</a>
+          <a href="#">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Filtros para consulta de notas -->
+<form class="dropbox-container">
+  <select class="filter" name="select-año" id="filter-año">
+    <option selected disabled>Año</option>
+    <option value="">2018</option>
+    <option value="">2019</option>
+    <option value="">2020</option>
+  </select>
+  <select class="filter" name="select-periodo" id="filter-periodo">
+    <option selected disabled>Periodo</option>
+    <option value="">Primero</option>
+    <option value="">Segundo</option>
+    <option value="">Tercero</option>
+  </select>
+  <select class="filter" name="select-grado" id="filter-grado">
+    <option selected disabled>Grado</option>
+    <option value="">Sexto</option>
+    <option value="">Septimo</option>
+    <option value="">Octavo</option>
+  </select>
+  <select class="filter" name="select-asignatura" id="filter-asignatura">
+    <option selected disabled>Asignatura</option>
+    <option value="">Literatura</option>
+    <option value="">Matemáticas</option>
+    <option value="">Física</option>
+  </select>
+</form>
+<div class="target">
+  <span id="text">No hay registros, verifique los filtros de la consultas.</span>
+</div>

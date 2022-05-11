@@ -25,8 +25,7 @@
       <div class="drop-btn">
         <span class="submenu">Registro</span>
         <div id="drop-content">
-          <a href="#">Estudiantes</a>
-          <a href="#">Docentes</a>
+          <a href="#">Usuarios</a>
           <a href="#">Materias</a>
           <a href="#">Grados</a>
         </div>
@@ -64,6 +63,14 @@
   <div class="inputs-childs">
     <label for="">Sede</label>
     <input type="text" name="sede" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Tipo de usuario</label>
+    <select name="rol_id" id="rol">
+      <option disabled selected>Seleccione</option>
+      <option value="estudiante">Estudiante</option>
+      <option value="docente">Docente</option>
+    </select>
   </div>
   <div class="inputs-childs">
     <label for="">Curso</label>

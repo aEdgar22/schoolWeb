@@ -20,3 +20,9 @@ body {
   justify-content: center;
   color: var(--alternative-text-color);
 }
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+}

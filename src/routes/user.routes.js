@@ -9,7 +9,7 @@ import checkAdminRole from '../middlewares/auth.handler.js';
 router.post(
   '/singUp',
   //passport.authenticate('jwt', { session: false }),
-  checkAdminRole,
+  //checkAdminRole,
   auth.singUp
 );
 
@@ -32,6 +32,6 @@ router.get('/estudiante', userController.estudiante);
 
 //- inicio Usuario profesor
 // http://localhost:3000/api/v1/user/profesor
-router.get('/profesor', );
+router.get('/profesor', userController.profesor);
 
 export default router;

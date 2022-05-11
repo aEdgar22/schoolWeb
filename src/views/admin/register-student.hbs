@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="../admin styles/registrar-estudiante.css" />
+<!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
+<header class="header">
+  <nav class="nav">
+    <p class="logo">Gestión Académica</p>
+    <button class="btn-menu">
+      <img id="img-menu" src="../assets/menu.svg" />
+    </button>
+    <div class="submenu-container">
+      <!-- Menu desplegable -->
+      <div class="drop-btn">
+        <span class="submenu">Institucional</span>
+        <div id="drop-content">
+          <a href="#">Estudiantes</a>
+          <a href="#">Docentes</a>
+        </div>
+      </div>
+      <div class="drop-btn">
+        <span class="submenu">Académico</span>
+        <div id="drop-content">
+          <a href="#">Notas</a>
+          <a href="#">Observador</a>
+        </div>
+      </div>
+      <div class="drop-btn">
+        <span class="submenu">Registro</span>
+        <div id="drop-content">
+          <a href="#">Estudiantes</a>
+          <a href="#">Docentes</a>
+          <a href="#">Materias</a>
+          <a href="#">Grados</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Contenedor y entrada de datos para registrar estudiantes, inputs y dropbox -->
+<form id="inputs-container">
+  <span id="label-title">Registrar estudiante</span>
+  <div class="inputs-childs">
+    <label for="">Nombres</label>
+    <input type="text" name="nombres" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Primer apellido</label>
+    <input type="text" name="primer-apellido" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Segundo apellido</label>
+    <input type="text" name="segundo-apellido" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Tipo de identificación</label>
+    <select name="tipo-identificacion">
+      <option disabled selected>Seleccione</option>
+      <option value="cc">C.C</option>
+      <option value="ti">T.I</option>
+    </select>
+  </div>
+  <div class="inputs-childs">
+    <label for="">Número de identificación</label>
+    <input type="text" name="numero-identificacion" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Jornada</label>
+    <input type="text" name="jornada" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Correo electrónico</label>
+    <input id="correo-validate" type="email" name="correo" />
+  </div>
+  <div class="inputs-childs">
+    <label for="">Contraseña</label>
+    <input type="text" name="contraseña" />
+  </div>
+  <button id="btn-accept">Aceptar</button>
+</form>

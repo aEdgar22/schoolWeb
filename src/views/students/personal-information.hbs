@@ -1,31 +1,6 @@
 <link rel="stylesheet" href="../styles/informacion-personal.css" />
 <!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
-<header class="header">
-  <nav class="nav">
-    <p class="logo">Gestión Académica</p>
-    <button class="btn-menu">
-      <img id="img-menu" src="../assets/menu.svg" />
-    </button>
-    <div class="submenu-container">
-      <div class="drop-btn">
-        <span class="submenu">Institucional</span>
-        <div id="drop-content">
-          <!-- Menu desplegable -->
-          <a href="#">Información académica</a>
-          <a href="#">Observador</a>
-        </div>
-      </div>
-      <span class="submenu">Resultado de notas</span>
-      <div class="drop-btn">
-        <span class="submenu">Usuario</span>
-        <div id="drop-content">
-          <a href="#">Perfil</a>
-          <a href="#">Cerrar sesión</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
+{{> header-student}} <!-- Importacion para encabezado del estudiante -->
 
 <!-- Contenedor y entrada de datos para actualizar información, inputs y dropbox -->
 <form id="inputs-container">

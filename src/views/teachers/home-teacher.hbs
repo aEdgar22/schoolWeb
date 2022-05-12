@@ -1,30 +1,7 @@
 <link rel="stylesheet" href="/styles/design-inicio-estudiante.css" />
 <!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
-<header class="header">
-  <nav class="nav">
-    <p class="logo">Gestión Académica</p>
-    <button class="btn-menu">
-      <img id="img-menu" src="/assets/menu.svg" />
-    </button>
-    <div class="submenu-container">
-      <!-- Menu desplegable -->
-      <div class="drop-btn">
-        <span class="submenu">Institucional</span>
-        <div id="drop-content">
-          <a href="#">Información personal</a>
-        </div>
-      </div>
-      <div class="drop-btn">
-        <span class="submenu">Académico</span>
-        <div id="drop-content">
-          <a href="#">Notas</a>
-          <a href="#">Observador</a>
-        </div>
-      </div>
-      <span><a href="../user/singIn">Cerrar sesión</a></span>
-    </div>
-  </nav>
-</header>
+{{> header-teacher}} <!-- Importacion para encabezado del docente -->
+
 <div id="card">
   <span id="text-card">Bienvenido a la plataforma</span>
 </div>

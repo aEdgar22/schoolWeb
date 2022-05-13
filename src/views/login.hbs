@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es-ES">
   <head>
     <meta charset="UTF-8" />
@@ -17,28 +16,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="logo">
-        <img class="logo-img" src="/assets/logo.svg" />
-        <p class="logo-info">Sistema de Gestión Académico</p>
-      </div>
+      <div id="target">
+        <div class="logo">
+          <img class="logo-img" src="/assets/logo.svg" />
+          <p class="logo-info">Sistema de Gestión Académico</p>
+        </div>
 
-      <!-- Entrada de correo y contraseña -->
-      <form action="../user/singIn" id="login" action="" class="login" method="post">
-        <input
-          class="input"
-          id="input-email"
-          type="email"
-          placeholder="Nombre de usuario"
-          name="email"
-        />
-        <input
-          class="input"
-          type="password"
-          placeholder="Contraseña"
-          name="contraseña"
-        />
-        <button class="btn-login" id="btn-login">Ingresar</button>
-      </form>
+        <!-- Entrada de correo y contraseña -->
+        <form
+          action="../user/singIn"
+          id="login"
+          action=""
+          class="login"
+          method="post"
+        >
+          <input
+            class="input"
+            id="input-email"
+            type="email"
+            placeholder="Nombre de usuario"
+            name="email"
+          />
+          <input
+            class="input"
+            type="password"
+            placeholder="Contraseña"
+            name="contraseña"
+          />
+          <button class="btn-login" id="btn-login">Ingresar</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

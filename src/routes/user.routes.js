@@ -13,6 +13,8 @@ router.post(
   auth.singUp
 );
 
+router.get('/singUp', userController.singUp)
+
 //---------------------------------------------
 //- Ingreso de usuario
 //http://localhost:3000/api/v1/user/singIn

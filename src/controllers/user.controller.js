@@ -17,10 +17,15 @@ const estudiante = async(req, res) =>{
 const profesor = async(req, res) =>{
   await res.render('teachers/home-teacher')
 }
+
+const singUp = async(req, res) =>{
+  await res.render('admin/register-users')
+}
 export default {
     landing,
     login,
     admin,
     estudiante,
-    profesor
+    profesor,
+    singUp
 }

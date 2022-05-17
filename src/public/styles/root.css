@@ -2,9 +2,12 @@
   --primary-color: #0353a4;
   --hover-color: #0a3c7c;
   --text-color: #fff;
+  --text-color-secundary: #004F9E;
   --alternative-text-color: #6c757d;
   --block-color: rgba(233, 236, 239, 50%);
   --filter-color: rgba(124, 156, 191, 20%);
+  --color-table: #F4F7FC;
+  --text-color-table: #606F89;
   --font: "Inter";
   --menu-font-weight: 600;
   --card-font-weight: 200;

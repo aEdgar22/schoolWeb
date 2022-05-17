@@ -4,11 +4,11 @@
 {{> header-admin}}
 
 <!-- Contenedor y entrada de datos para registrar instituciones -->
-<form id="inputs-container">
-    <span id="label-title">Registrar institución</span>
+<form id="inputs-container" action="../sede/createSede" method="post">
+    <span id="label-title">Registrar sede</span>
     <div class="inputs-childs">
-        <label for="">Nombre de la institución</label>
-        <input type="text" name="nombres_institucion" />
+        <label for="">Nombre de la sede</label>
+        <input type="text" name="nombres_sede" />
     </div>
 
     <button id="submit">Añadir</button>

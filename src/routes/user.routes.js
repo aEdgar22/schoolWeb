@@ -12,7 +12,6 @@ router.post(
   //checkAdminRole,
   auth.singUp
 );
-
 router.get('/singUp', userController.singUp)
 
 //---------------------------------------------
@@ -33,5 +32,6 @@ router.get('/estudiante', userController.estudiante);
 //- inicio Usuario profesor
 // http://localhost:3000/api/v1/user/profesor
 router.get('/profesor', userController.profesor);
+
 
 export default router;

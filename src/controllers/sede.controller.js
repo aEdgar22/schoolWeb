@@ -6,7 +6,7 @@ const getSedes = async(req, res) => {
         const sedes = await Sede.findAll();
 
         res.status(200).json({
-            data: sedes
+            sedes
         });
     } catch (error) {
         res.status(500).json({
@@ -35,7 +35,11 @@ const createSede = async(req, res) => {
     }
 };
 
+const renderCreateSede = async(req, res) =>{
+    await res.render('admin/register-institute')
+}
 export default {
     getSedes,
-    createSede
+    createSede,
+    renderCreateSede
 }

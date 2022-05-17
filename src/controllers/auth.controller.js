@@ -11,8 +11,8 @@ const singUp = async (req, res) => {
     //encriptando la contraseña
     let password = await bcrypt.hashSync(req.body.contraseña, 10);
     //creando usuario
-    res.send(primer_apellido)
-    /*
+   
+
     const newUser = await User.create({
       dni,
       nombre,
@@ -29,7 +29,7 @@ const singUp = async (req, res) => {
         newUser,
       });
    
-    }*/
+    }
   } catch (error) {
     res.status(500).json(`ha ocurrido un error ${error}`);
   }

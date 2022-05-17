@@ -1,0 +1,62 @@
+/* Estilo de CRUD por defecto */
+
+#submit {
+  height: 2.125rem;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+#submit:active {
+  background-color: var(--hover-color);
+}
+
+#table {
+  width: 80vw;
+  margin: auto;
+  border: 2px solid var(--block-color);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 4px;
+  padding: .5rem;
+  color: var(--text-color-table);
+  font-size: 14px;
+}
+
+.column {
+  padding: .875rem 1rem;
+  background-color: var(--color-table);
+  text-transform: uppercase;
+}
+
+.row {
+  text-align: center;
+  padding: .875rem 1rem;
+}
+
+i {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 .5rem;
+}
+
+/* #color {
+      background-color: var(--color-table);
+    } */
+
+@media (min-width: 800px) {
+  #table {
+    width: 38rem;
+  }
+
+  i {
+    margin: 0 1rem;
+  }
+}

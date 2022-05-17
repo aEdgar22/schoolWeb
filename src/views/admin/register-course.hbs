@@ -1,0 +1,48 @@
+<!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
+<link rel="stylesheet" href="/admin-styles/registrar-curso.css" />
+<!-- Importacion para encabezado del administrador -->
+{{> header-admin}}
+
+<!-- Contenedor y entrada de datos para registrar cursos -->
+<form id="inputs-container">
+    <span id="label-title">Registrar curso</span>
+    <div class="inputs-childs">
+        <label for="">Nombre del curso</label>
+        <input type="text" name="curso" />
+    </div>
+    <div class="inputs-childs">
+        <label for="">Jornada</label>
+        <select name="tipo_doc_id">
+            <option disabled selected>Seleccione</option>
+            <option value="1">Mañana</option>
+            <option value="2">Tarde</option>
+        </select>
+    </div>
+    <div class="inputs-childs">
+        <label for="">Profesor</label>
+        <select name="user_id">
+            <option disabled selected>Seleccione</option>
+            <option value="1">Profe. uno</option>
+            <option value="2">Profe. dos</option>
+        </select>
+    </div>
+
+    <button id="submit">Añadir</button>
+</form>
+
+<!-- CRUD -->
+<table id="table">
+    <tr>
+        <th class="column">Curso</th>
+        <th class="column">Jornada</th>
+        <th class="column">Acciones</th>
+    </tr>
+    <tr>
+        <td id="color" class="row">Septimo</td>
+        <td id="color" class="row">Tarde</td>
+        <td id="color" class="row">
+            <i class="fa-solid fa-pen"></i>
+            <i class="fa-solid fa-trash"></i>
+        </td>
+    </tr>
+</table>

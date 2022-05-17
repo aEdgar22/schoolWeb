@@ -1,0 +1,32 @@
+<!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
+<link rel="stylesheet" href="/admin-styles/registrar-instituto.css" />
+<!-- Importacion para encabezado del administrador -->
+{{> header-admin}}
+
+<!-- Contenedor y entrada de datos para registrar instituciones -->
+<form id="inputs-container">
+    <span id="label-title">Registrar institución</span>
+    <div class="inputs-childs">
+        <label for="">Nombre de la institución</label>
+        <input type="text" name="nombres_institucion" />
+    </div>
+
+    <button id="submit">Añadir</button>
+</form>
+
+<!-- CRUD -->
+<table id="table">
+    <tr>
+        <th class="column">Institución</th>
+        <th class="column">Acciones</th>
+    </tr>
+    <tr>
+        <td id="color" class="row">
+            Institución Educativa Esperanzas del Saber
+        </td>
+        <td id="color" class="row">
+            <i class="fa-solid fa-pen"></i>
+            <i class="fa-solid fa-trash"></i>
+        </td>
+    </tr>
+</table>

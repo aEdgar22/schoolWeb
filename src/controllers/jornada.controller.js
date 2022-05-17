@@ -14,7 +14,6 @@ const getJornadas = async(req, res) => {
 }
 
 
-
 export default {
     getJornadas
 }

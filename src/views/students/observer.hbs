@@ -1,10 +1,12 @@
 <link rel="stylesheet" href="../styles/observador.css" />
 <!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
-{{> header-student}} <!-- Importacion para encabezado del estudiante -->
+{{> header-student}}
+<!-- Importacion para encabezado del estudiante -->
 
 <!-- Entrada de comentarios del observador -->
 <form id="container">
-  <label id="box-title">Observador</label>
-  <textarea id="box-text" rows="10" name="observador"></textarea>
-  <button id="btn-submit">Aceptar</button>
+  <label id="title">Observador</label>
+  <div id="card">
+    <span id="text-card">No hay registro de observaciones.</span>
+  </div>
 </form>

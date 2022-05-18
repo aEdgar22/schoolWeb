@@ -6,7 +6,7 @@ import bcrypt from 'bcryptjs';
 const singUp = async (req, res) => {
   
   try {
-    const { dni, nombre, primer_apellido, segundo_apellido, email, rol_id } = req.body;
+    const { dni, nombre, primer_apellido, segundo_apellido, email, rol_id, curso_id, sede_id, tipo_doc_id } = req.body;
 
     //encriptando la contraseña
     let password = await bcrypt.hashSync(req.body.contraseña, 10);
@@ -21,14 +21,17 @@ const singUp = async (req, res) => {
       email,
       contraseña: password,
       rol_id,
+      curso_id,
+      sede_id,
+      tipo_doc_id
     });
     if (newUser) {
       //devolviendo data en json
-      delete newUser.dataValues.contraseña;
-      res.status(201).json({
-        newUser,
-      });
-   
+      
+      /*res.status(201).json({
+        newUser
+      });*/
+      res.render('admin/register-users')
     }
   } catch (error) {
     res.status(500).json(`ha ocurrido un error ${error}`);

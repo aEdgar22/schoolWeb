@@ -15,7 +15,7 @@ const getJornadas = async () => {
 };
 
 
-//Funcion para llenar comboBox de sedes dinamicamente
+//Funcion para llenar comboBox de jornadas dinamicamente
 const llenarComboBoxJornada = async (lugar) => {
   const data = await getJornadas();
   let elementos = '<option selected disables>Seleccione</option>';

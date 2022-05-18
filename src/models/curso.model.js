@@ -24,4 +24,6 @@ const Curso = sequelize.define('cursos', {
     timestamps: false
 });
 
+
+
 export default Curso;

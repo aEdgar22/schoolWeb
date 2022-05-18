@@ -3,7 +3,7 @@
 {{> header-admin}} <!-- Importacion para encabezado del administrador -->
 
 <!-- Contenedor y entrada de datos para registrar estudiantes, inputs y dropbox -->
-    <form id="inputs-container">
+    <form id="inputs-container" action="../user/singUp" method="post">
       <span id="label-title">Registrar Usuarios</span>
       <div class="inputs-childs">
         <label for="">Nombres</label>
@@ -11,18 +11,18 @@
       </div>
       <div class="inputs-childs">
         <label for="">Primer apellido</label>
-        <input type="text" name="primer-apellido" />
+        <input type="text" name="primer_apellido" />
       </div>
       <div class="inputs-childs">
         <label for="">Segundo apellido</label>
-        <input type="text" name="segundo-apellido" />
+        <input type="text" name="segundo_apellido" />
       </div>
       <div class="inputs-childs">
         <label for="">Tipo de identificación</label>
         <select name="tipo_doc_id">
           <option disabled selected>Seleccione</option>
-          <option value="cc">C.C</option>
-          <option value="ti">T.I</option>
+          <option value="1">C.C</option>
+          <option value="2">T.I</option>
         </select>
       </div>
       <div class="inputs-childs">
@@ -31,29 +31,22 @@
       </div>
       <div class="inputs-childs">
         <label for="">Sede</label>
-        <select name="sede" id="sede">
+        <select name="sede_id" id="sede">
         </select>
       </div>
       <div class="inputs-childs">
         <label for="">Tipo de usuario</label>
         <select name="rol_id" id="rol">
-          <option disabled selected>Seleccione</option>
-          <option value="estudiante">Estudiante</option>
-          <option value="docente">Docente</option>
         </select>
       </div>
       <div class="inputs-childs">
         <label for="">Curso</label>
         <select name="curso_id" id="curso">
-          <option disabled selected>Seleccione</option>
-          <option value="1">Sexto</option>
-          <option value="2">Septimo</option>
-          <option value="3">Octavo</option>
         </select>
       </div>
       <div class="inputs-childs">
         <label for="">Jornada</label>
-          <select name="jornada" id="jornada">
+          <select name="jornada_id" id="jornada">
           </select>
       </div>
       <div class="inputs-childs">
@@ -68,3 +61,5 @@
     </form>
     <script src="/js/getSedes.js"></script>
     <script src="/js/getJornadas.js"></script>
+    <script src="/js/getRoles.js"></script>
+    <script src="/js/getCursos.js"></script>

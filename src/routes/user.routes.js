@@ -33,5 +33,9 @@ router.get('/estudiante', userController.estudiante);
 // http://localhost:3000/api/v1/user/profesor
 router.get('/profesor', userController.profesor);
 
+// obtener profesores 
+// http://localhost:3000/api/v1/user/profesores
+router.get('/profesores', userController.getProfesores);
+
 
 export default router;

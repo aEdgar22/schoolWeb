@@ -4,7 +4,7 @@
 {{> header-admin}}
 
 <!-- Contenedor y entrada de datos para registrar cursos -->
-<form id="inputs-container">
+<form id="inputs-container" action="../curso/createCurso" method="post">
     <span id="label-title">Registrar curso</span>
     <div class="inputs-childs">
         <label for="">Nombre del curso</label>
@@ -12,18 +12,12 @@
     </div>
     <div class="inputs-childs">
         <label for="">Jornada</label>
-        <select name="tipo_doc_id">
-            <option disabled selected>Seleccione</option>
-            <option value="1">Mañana</option>
-            <option value="2">Tarde</option>
+        <select name="jornada_id" id="jornada">
         </select>
     </div>
     <div class="inputs-childs">
         <label for="">Profesor</label>
-        <select name="user_id">
-            <option disabled selected>Seleccione</option>
-            <option value="1">Profe. uno</option>
-            <option value="2">Profe. dos</option>
+        <select name="user_id" id="profesores">
         </select>
     </div>
 
@@ -38,11 +32,13 @@
         <th class="column">Acciones</th>
     </tr>
     <tr>
-        <td id="color" class="row">Septimo</td>
-        <td id="color" class="row">Tarde</td>
+        <td id="color" class="row"></td>
+        <td id="color" class="row"></td>
         <td id="color" class="row">
             <i class="fa-solid fa-pen"></i>
             <i class="fa-solid fa-trash"></i>
         </td>
     </tr>
 </table>
+<script src="/js/getJornadas.js"></script>
+<script src="/js/getProfesores.js"></script>

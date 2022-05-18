@@ -1,3 +1,5 @@
+import User from '../models/user.model.js'
+
 const landing = async (req, res) => {
     await res.render('landing')
   };
@@ -21,11 +23,30 @@ const profesor = async(req, res) =>{
 const singUp = async(req, res) =>{
   await res.render('admin/register-users')
 }
+
+const getProfesores = async(req, res)=>{
+  try {
+    const profesores = await User.findAll({
+      where: {
+        rol_id: 2
+      }
+    })
+
+    res.status(200).json({
+      profesores
+    });
+} catch (error) {
+    res.status(500).json({
+        message: `ha habído un error: ${error}`
+    })
+}
+}
 export default {
     landing,
     login,
     admin,
     estudiante,
     profesor,
-    singUp
+    singUp,
+    getProfesores
 }

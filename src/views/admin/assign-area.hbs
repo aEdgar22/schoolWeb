@@ -1,0 +1,35 @@
+<!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
+<link rel="stylesheet" href="/admin-styles/assing-area.css" />
+<!-- Importacion para encabezado del administrador -->
+{{> header-admin}}
+
+<!-- Contenedor y entrada de datos para registrar estudiantes, inputs y dropbox -->
+<form id="inputs-container">
+  <span id="label-title">Asignar area</span>
+  <div class="inputs-childs">
+    <label for="">Profesor</label>
+    <select name="user_id">
+      <option disabled selected>Seleccione</option>
+      <option value="1">Profe. uno</option>
+      <option value="2">Profe. dos</option>
+    </select>
+  </div>
+  <div class="inputs-childs">
+    <label for="">Asignatura</label>
+    <select name="nombre_materia">
+      <option disabled selected>Seleccione</option>
+      <option value="1">Asig. uno</option>
+      <option value="2">Asig. dos</option>
+    </select>
+  </div>
+  <div class="inputs-childs">
+    <label for="">Curso</label>
+    <select name="curso">
+      <option disabled selected>Seleccione</option>
+      <option value="1">Curso uno</option>
+      <option value="2">Curso dos</option>
+    </select>
+  </div>
+
+  <button id="submit">Asignar</button>
+</form>

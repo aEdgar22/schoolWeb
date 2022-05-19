@@ -6,6 +6,10 @@ import asignaturaController from '../controllers/asignatura.controller.js';
 router.get('/createAsignatura',asignaturaController.renderCreateAsignatura);
 
 // ruta para crear una asignatura
-router.post('/createAsignatura', asignaturaController.createAsignatura)
+router.post('/createAsignatura', asignaturaController.createAsignatura);
+
+
+//http://localhost:3000/api/v1/asignatura/
+router.get('/',asignaturaController.getAsignaturas);
 
 export default router;

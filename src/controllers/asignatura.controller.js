@@ -22,7 +22,21 @@ const createAsignatura = async(req, res) =>{
   })
   }
 }
+
+const getAsignaturas = async(req, res) =>{
+  try {
+      const asignaturas = await Materia.findAll();
+      res.status(200).json({
+        asignaturas
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: `ha habído un error: ${error}`
+  })
+  }
+}
 export default {
   renderCreateAsignatura,
-  createAsignatura
+  createAsignatura,
+  getAsignaturas
 };

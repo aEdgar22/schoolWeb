@@ -18,16 +18,13 @@ const getSedes = async(req, res) => {
 const createSede = async(req, res) => {
     try {
         let { nombres_sede } = req.body;
-        //res.send(nombres_sede)    
+
         const newSede = await Sede.create({
             nombres_sede
         })
         if(newSede){
-            res.status(201).json({
-                message: 'Sede creada con éxito',
-                data: newSede
-            })
-        }   
+          res.render('admin/register-institute')
+        }
     } catch (error) {
         res.status(500).json({
             message: `ha habído un error: ${error}`

@@ -4,20 +4,17 @@
 {{> header-admin}}
 
 <!-- Contenedor y entrada de datos para registrar materias -->
-<form id="inputs-container">
+<form id="inputs-container" action="../asignatura/createAsignatura" method="post">
     <span id="label-title">Registrar asignatura</span>
     <div class="inputs-childs">
         <label for="">Nombre de la asignatura</label>
         <input type="text" name="nombre_materia" />
     </div>
-    <div class="inputs-childs">
+    <!--<div class="inputs-childs">
         <label for="">Profesor</label>
-        <select name="user_id">
-            <option disabled selected>Seleccione</option>
-            <option value="1">Profe. uno</option>
-            <option value="2">Profe. dos</option>
+        <select name="user_id" id="profesores">
         </select>
-    </div>
+    </div>-->
 
     <button id="submit">Añadir</button>
 </form>
@@ -30,8 +27,8 @@
         <th class="column">Acciones</th>
     </tr>
     <tr>
-        <td id="color" class="row">Literatura</td>
-        <td id="color" class="row">Ernesto Sabato</td>
+        <td id="color" class="row"></td>
+        <td id="color" class="row"></td>
         <td id="color" class="row">
             <i class="fa-solid fa-pen"></i>
             <i class="fa-solid fa-trash"></i>

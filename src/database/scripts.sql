@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS curso(
 
 CREATE TABLE IF NOT EXISTS jornada(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    jornada VARCHAR(20) NOT NULL 
+    jornada VARCHAR(20) NOT NULL
 )ENGINE = INNODB;
 
 CREATE TABLE IF NOT EXISTS materias(
@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS notas(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nota_1 INT NOT NULL,
     nota_2 INT NOT NULL,
-    nota_3 INT NOT NULL, 
+    nota_3 INT NOT NULL,
     user_id INT NOT NULL,
     materia_id INT NOT NULL,
     periodo_id INT NOT NULL
@@ -127,6 +127,13 @@ CREATE TABLE IF NOT EXISTS acudientes (
     telefono VARCHAR(12) NOT NULL,
     user_id INT
 )ENGINE = INNODB;
+
+CREATE TABLE IF NOT EXISTS usuario_materias (
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  materia_id INT NOT NULL
+)ENGINE = INNODB;
+
 
 ---------------------RELACIONES ENTRE TABLAS--------------------
 

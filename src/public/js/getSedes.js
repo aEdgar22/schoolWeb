@@ -6,7 +6,7 @@ const getSedes = async () => {
   const data = await res.json();
   const sedesArray = await data.sedes;
   const nombresSede = [];
-  
+
   for (let i = 0; i < sedesArray.length; i++) {
      nombresSede.push(sedesArray[i].nombres_sede);
   }
@@ -16,7 +16,7 @@ const getSedes = async () => {
 //Funcionar para llenar comboBox de sedes dinamicamente
 const llenarComboBox = async (lugar) => {
   const data = await getSedes();
-  let elementos = '<option selected disables>Seleccione</option>';
+  let elementos = '<option selected disabled>Seleccione</option>';
 
   for(let i = 0; i< data.length; i++){
     elementos += `<option value="${[i+1]}">${data[i]}</option>"`

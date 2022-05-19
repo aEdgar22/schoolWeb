@@ -16,7 +16,7 @@ const getRoles = async () => {
 //Funcionar para llenar comboBox de roles dinamicamente
 const llenarComboBoxRoles = async (lugar) => {
   const data = await getRoles();
-  let elementos = '<option selected disables>Seleccione</option>';
+  let elementos = '<option selected disabled>Seleccione</option>';
 
   for (let i = 0; i < data.length; i++) {
     elementos += `<option value="${[i + 1]}">${data[i]}</option>"`;

@@ -1,0 +1,35 @@
+/* Importacion de propiedades personalizadas */
+@import url(../styles/root.css);
+/* Importacion de encabezado y navegacion por defecto */
+@import url(../styles/navegacion-default.css);
+/* Importacion de estilos de formulario para registro y actualizacion de datos*/
+@import url(../styles/formularios.css);
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+#submit {
+  height: 2.125rem;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+#submit:active {
+  background-color: var(--hover-color);
+}

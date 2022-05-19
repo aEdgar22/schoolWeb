@@ -7,55 +7,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap"
     />
-    <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="/styles/landing-page.css" />
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/landing.css" />
+    <script
+      src="https://kit.fontawesome.com/2db2d1eed0.js"
+      crossorigin="anonymous"
+    ></script>
     <title>SchoolProject</title>
   </head>
   <body>
-    <div class="container-logo">
+    <span id="top"></span>
+    <div class="logo-container">
       <div id="logo">
-        <img id="logo-img" src="/assets/logo.svg" alt="SchoolProject" />
+        <img id="img-logo" src="assets/logo-white.svg" alt="Logo" />
         <span id="text-logo">SchoolProject</span>
-      </div>
-      <div id="buttons">
-        <button id="btn-explorar">
-          <a id="a-explorar" href=""> Explorar</a>
-        </button>
-        <button id="btn-campus">
-          <a id="a-campus" href="../api/v1/user/singIn">Campus virtual</a>
-        </button>
+        <button id="btn-campus"><a href="../api/v1/user/singIn">
+            Campus Virtual
+          </a></button>
       </div>
     </div>
-    <section class="section">
-      <article id="acerca-de" class="articles">
-        <span class="subtitle">Acerca de SchoolProject</span>
-        <p>
+    <a href="#parrafo">
+      <i id="down" class="fa-solid fa-angles-down fa-xl fa-bounce"></i>
+    </a>
+    <p id="parrafo">Gestione su información académica de manera integral.</p>
+    <section class="section-container">
+      <article id="acerca-de">
+        <img class="post" src="assets/acerca-de.svg" alt="acerca de" />
+        <span class="subtitle">Acerca de</span>
+        <p class="article-p">
           SchoolProject es un software basado en la nube que apoya la gestión de
           la educación académica y administrativa en las instituciones
           educativas.
         </p>
-        <img src="/assets/cloud.jpg" alt="cloud" />
       </article>
-      <article id="gestion" class="articles">
-        <span class="subtitle">Gestión académica</span>
-        <p>
-          Administre la información de sus estudiantes de manera general,
-          agilice procesos como inscripción y registro de calificaciones.
+      <article id="gestion">
+        <img class="post" src="assets/acerca-de.svg" alt="gestion" />
+        <span class="subtitle">Gestión Académica</span>
+        <p class="article-p">
+          Administre la información de sus estudiantes de manera general para
+          agilizar procesos como inscripción, registro de calificaciones y
+          evaluación de maestros.
         </p>
-        <img id="puzzle" src="/assets/puzzle.svg" alt="puzzle" />
       </article>
-      <article id="update" class="articles">
-        <span class="subtitle">SchoolProject es seguro y recibe soporte
-          constantemente</span>
-        <img id="img-update" src="/assets/update.svg" alt="update" />
+      <article id="soporte">
+        <img class="post" src="assets/acerca-de.svg" alt="soporte" />
+        <span class="subtitle">Soporte</span>
+        <p class="article-p">Confiable, seguro y en continuo mejoramiento.</p>
       </article>
     </section>
+    <a href="#top">
+      <i id="up" class="fa-solid fa-angles-up fa-xl"></i>
+    </a>
     <footer>
       <span id="title-footer"> SchoolProject </span>
-      <span id="contacto">Contactenos: correo@gmail.com</span>
+      <span id="contacto">Contactenos:<br>schoolproject@gmail.com</span>
       <span id="derechos">Todos los derechos reservados.</span>
     </footer>
   </body>

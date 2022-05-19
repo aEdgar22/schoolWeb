@@ -1,61 +1,7 @@
-<link rel="stylesheet" href="../styles/informacion-personal.css" />
 <!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
-{{> header-student}} <!-- Importacion para encabezado del estudiante -->
+<link rel="stylesheet" href="../styles/informacion-personal.css" />
+<!-- Importacion para encabezado del estudiante -->
+{{> header-student}}
 
-<!-- Contenedor y entrada de datos para actualizar información, inputs y dropbox -->
-<form id="inputs-container">
-  <span id="label-title">Actualizar información personal</span>
-  <div class="inputs-childs">
-    <label for="">Nombres</label>
-    <input type="text" name="nombres" />
-  </div>
-  <div class="inputs-childs">
-    <label for="">Primer apellido</label>
-    <input type="text" name="primer-apellido" />
-  </div>
-  <div class="inputs-childs">
-    <label for="">Segundo apellido</label>
-    <input type="text" name="segundo-apellido" />
-  </div>
-  <div class="inputs-childs">
-    <label for="">Tipo de identificación</label>
-    <select name="tipo-identificacion">
-      <option disabled selected>Seleccione</option>
-      <option value="cc">C.C</option>
-      <option value="ti">T.I</option>
-    </select>
-  </div>
-  <div class="inputs-childs">
-    <label for="">Número de identificación</label>
-    <input type="text" name="numero-identificacion" />
-  </div>
-  <div class="inputs-childs">
-    <label for="">Sexo</label>
-    <select name="sexo">
-      <option disabled selected>Seleccione</option>
-      <option value="masculino">Masculino</option>
-      <option value="femenino">Femenino</option>
-    </select>
-  </div>
-  <div class="inputs-childs">
-    <label for="">Correo electrónico</label>
-    <input id="correo-validate" type="email" name="correo" />
-  </div>
-  <div class="inputs-childs">
-    <label for="">Celular</label>
-    <input type="tel" name="celular" maxlength="10" />
-  </div>
-  <div class="inputs-childs">
-    <label for="">Fecha de nacimiento</label>
-    <input type="date" name="fecha-nacimiento" />
-  </div>
-  <div class="inputs-childs">
-    <label for="">Lugar de nacimiento</label>
-    <input type="text" name="lugar-nacimiento" />
-  </div>
-  <div class="inputs-childs">
-    <label for="">Dirección</label>
-    <input type="text" name="direccion" />
-  </div>
-  <button id="btn-accept">Aceptar</button>
-</form>
+<!-- Contenedor y entrada de datos para actualizar información -->
+{{> personal-information}}

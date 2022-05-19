@@ -1,0 +1,186 @@
+/* Importacion de propiedades personalizadas */
+@import url(root.css);
+
+body {
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.logo-container {
+  height: 24rem;
+  width: auto;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/students.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#text-logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+#btn-campus {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 2rem;
+  background-color: var(--btn-color);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 500;
+  transition-duration: 200ms;
+}
+
+#btn-campus:active{
+  background-color: #00bc87ab;
+}
+
+i {
+  color: var(--btn-color);
+}
+
+#down {
+  width: fit-content;
+  margin: 2.5rem auto 2.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --fa-bounce-rebound: 0;
+  --fa-animation-delay: 1s;
+  --fa-animation-duration: 2.5s;
+  --fa-bounce-height: 4px;
+  --fa-animation-timing: linear;
+}
+
+#parrafo {
+  margin: auto 1.5rem 4rem 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.section-container {
+  width: 19.5rem;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+article {
+  width: 100%;
+  padding: 1rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.post{
+  width: 6rem;
+  height: 4rem;
+}
+
+.subtitle {
+  font-weight: 600;
+}
+
+.article-p {
+  margin: .375rem auto auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#up{
+  margin: 4rem auto 2.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  border-top: 2px solid var(--block-color);
+  height: 13.75rem;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#title-footer{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#contacto{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#derechos{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .logo-container{
+    height: 28.5rem;
+  }
+
+  #img-logo{
+    height: 8.25rem;
+    width: 7.375rem;
+  }
+
+  #text-logo{
+    font-size: 20px;
+  }
+
+  #btn-campus{
+    width: 9rem;
+    height: 2.125rem;
+  }
+
+  .section-container{
+    margin: auto 2rem auto 2rem;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

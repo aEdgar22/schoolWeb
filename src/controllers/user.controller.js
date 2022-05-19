@@ -41,6 +41,10 @@ const getProfesores = async(req, res)=>{
     })
 }
 }
+
+const asignarArea = async(req, res) =>{
+  await res.render('admin/assign-area')
+}
 export default {
     landing,
     login,
@@ -48,5 +52,6 @@ export default {
     estudiante,
     profesor,
     singUp,
-    getProfesores
+    getProfesores,
+    asignarArea
 }

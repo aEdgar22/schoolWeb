@@ -5,7 +5,7 @@ import auth from '../controllers/auth.controller.js';
 import passport from 'passport';
 import checkAdminRole from '../middlewares/auth.handler.js';
 //- registrar usuario
-// http://localhost:3000/api/v1/user/singUp 
+// http://localhost:3000/api/v1/user/singUp
 router.post(
   '/singUp',
   //passport.authenticate('jwt', { session: false }),
@@ -33,9 +33,12 @@ router.get('/estudiante', userController.estudiante);
 // http://localhost:3000/api/v1/user/profesor
 router.get('/profesor', userController.profesor);
 
-// obtener profesores 
+// obtener profesores
 // http://localhost:3000/api/v1/user/profesores
 router.get('/profesores', userController.getProfesores);
+
+// http://localhost:3000/api/v1/user/asignarArea
+router.get('/asignarArea', userController.asignarArea)
 
 
 export default router;

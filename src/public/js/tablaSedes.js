@@ -1,17 +1,15 @@
 const table = document.getElementById('table');
 let tableBody = document.createElement('tbody');
+let btn2 = document.createElement('button');
+import deleteSede from "./deleteSede.js";
+
 
 //obteniendo data del servidor
 const getSedes = async () => {
   const res = await fetch(`http://localhost:3000/api/v1/sede/`);
   const data = await res.json();
   const sedesArray = await data.sedes;
-  const nombresSede = [];
-
-  for (let i = 0; i < sedesArray.length; i++) {
-     nombresSede.push(sedesArray[i].nombres_sede);
-  }
-  return nombresSede;
+  return sedesArray;
 };
 
 
@@ -25,7 +23,8 @@ const llenarTablaSedes = async () =>{
       let fila = document.createElement('tr');
       let td = document.createElement('td');
 
-      td.innerText = sede;
+
+      td.innerText = sede.nombres_sede;
       td.className = "row";
       fila.appendChild(td);
 
@@ -36,15 +35,16 @@ const llenarTablaSedes = async () =>{
       td.appendChild(icono1);
       td.appendChild(icono2);
       fila.appendChild(td);
-
-
-
-
-
       tableBody.appendChild(fila)
 
+      icono2.addEventListener('click', async() =>{
+        await deleteSede(sede.id)
+      })
   });
   table.appendChild(tableBody)
 
 }
 llenarTablaSedes();
+
+
+

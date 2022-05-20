@@ -15,7 +15,7 @@ const llenarComboBoxCursos = async (lugar) => {
   let elementos = '<option selected disabled>Seleccione</option>';
 
   for(let i = 0; i< data.length; i++){
-    elementos += `<option value="${[i+1]}">${data[i].curso}</option>"`
+    elementos += `<option value="${data[i].id}">${data[i].curso}</option>"`
   }
   lugar.innerHTML = elementos
 };

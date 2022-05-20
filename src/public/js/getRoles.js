@@ -5,12 +5,13 @@ const getRoles = async () => {
   const res = await fetch(`http://localhost:3000/api/v1/role/`);
   const data = await res.json();
   const rolesArray = await data.roles;
-  const roles = [];
+  //const roles = [];
 
+  /*
   for (let i = 0; i < rolesArray.length; i++) {
     roles.push(rolesArray[i].rol);
-  }
-  return roles;
+  }*/
+  return rolesArray;
 };
 
 //Funcionar para llenar comboBox de roles dinamicamente
@@ -19,7 +20,7 @@ const llenarComboBoxRoles = async (lugar) => {
   let elementos = '<option selected disabled>Seleccione</option>';
 
   for (let i = 0; i < data.length; i++) {
-    elementos += `<option value="${[i + 1]}">${data[i]}</option>"`;
+    elementos += `<option value="${data[i].id}">${data[i].rol}</option>"`;
   }
   lugar.innerHTML = elementos;
 };

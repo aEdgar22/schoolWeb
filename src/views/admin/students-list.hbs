@@ -1,0 +1,32 @@
+<!-- Encabezado y navegacion por defecto, a excepcion de la pantalla de inicio de sesion -->
+<link rel="stylesheet" href="/admin-styles/students-list.css" />
+<!-- Importacion para encabezado del administrador -->
+{{> header-admin}}
+
+<div class="container">
+    <span id="span">Lista de estudiantes</span>
+    <input type="text" name="search-dni" id="input-search" maxlength="12"/>
+    <div class="container-btn">
+        <button id="search-btn" class="btn">Buscar</button>
+        <button id="register-btn" class="btn">Registrar</button>
+    </div>
+</div>
+
+<!-- CRUD -->
+<table id="table">
+    <tr>
+        <th class="column">Nombre</th>
+        <th class="column">DNI</th>
+        <th id="correo" class="column">Correo</th>
+        <th class="column">Acciones</th>
+    </tr>
+    <tr>
+        <td class="row">Wanse</td>
+        <td class="row">1007584784</td>
+        <td id="correo" class="row">wanse@gmail.com</td>
+        <td class="row">
+            <i class="fa-solid fa-pen"></i>
+            <i class="fa-solid fa-trash"></i>
+        </td>
+    </tr>
+</table>

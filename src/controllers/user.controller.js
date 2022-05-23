@@ -41,6 +41,13 @@ const getProfesores = async(req, res)=>{
     })
 }
 }
+const instEstu  = async(req, res) => {
+  await res.render('admin/students-list')
+}
+
+const instProf  = async(req, res) => {
+  await res.render('admin/teacher-list.hbs')
+}
 
 const asignarArea = async(req, res) =>{
   await res.render('admin/assign-area')
@@ -53,5 +60,7 @@ export default {
     profesor,
     singUp,
     getProfesores,
-    asignarArea
+    asignarArea,
+    instProf,
+    instEstu
 }

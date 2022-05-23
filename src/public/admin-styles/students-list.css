@@ -5,11 +5,16 @@
 /* Importacion de estilos de formulario para registro y actualizacion de datos*/
 @import url(../styles/formularios.css);
 /* Importacion de estilos de tablas */
-@import url(../styles/tablas.css);
+@import url(../styles/crud.css);
 
 body {
   height: 100vh;
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .container {
@@ -54,6 +59,12 @@ body {
 
 #correo {
   display: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
 }
 
 @media (min-width: 800px) {

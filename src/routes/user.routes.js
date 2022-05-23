@@ -40,5 +40,13 @@ router.get('/profesores', userController.getProfesores);
 // http://localhost:3000/api/v1/user/asignarArea
 router.get('/asignarArea', userController.asignarArea)
 
+// rederizar vista listar estudiante
+router.get('/listEstudiante', userController.instEstu);
+
+// rederizar vista listar profesor
+router.get('/listProfesor', userController.instProf);
+
+
+
 
 export default router;
